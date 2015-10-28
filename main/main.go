@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/tiborvass/xhyve-bindings"
+	"github.com/zchee/xhyve-bindings"
 )
 
 func usage() {
