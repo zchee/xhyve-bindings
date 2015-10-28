@@ -12,7 +12,6 @@ clean:
 
 build: clean
 	go build -o ./main/goxhyve ./main
-	sudo chown root ./main/goxhyve
 
 install: build
 	cp ./main/goxhyve $(GOPATH)/bin/
