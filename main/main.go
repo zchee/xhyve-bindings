@@ -34,8 +34,7 @@ func main() {
 	memory := os.Args[3]
 	iso := os.Args[4]
 	img := os.Args[5]
-	userdata := os.Args[6]
-	kexec := os.Args[7]
+	kexec := os.Args[6]
 
 	d := flag.Bool("d", false, "Whether or not to launch in the background(like a daemon)")
 	flag.Parse()
@@ -55,7 +54,6 @@ func main() {
 			fmt.Sprintf("-m %sM", memory),
 			fmt.Sprintf("-s 3,ahci-cd,%s", iso),
 			fmt.Sprintf("-s 4,virtio-blk,%s", img),
-			fmt.Sprintf("-s 5,virtio-blk,%s", userdata),
 			"-f", fmt.Sprintf("%s", kexec))...)
 	}
 }
