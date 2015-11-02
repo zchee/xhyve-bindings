@@ -11,7 +11,7 @@ clean:
 	$(RM) $(GOPATH)/bin/goxhyve
 
 build: clean
-	go build -o ./main/goxhyve ./main
+	cd ./main && go build -o ./goxhyve
 
 install: build
 	cp ./main/goxhyve $(GOPATH)/bin/
