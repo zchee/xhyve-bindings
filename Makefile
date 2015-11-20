@@ -14,4 +14,4 @@ build: clean
 	cd ./main && go build -o ./goxhyve
 
 install: build
-	cp ./main/goxhyve $(GOPATH)/bin/
+	cp ./main/goxhyve /usr/local/bin
